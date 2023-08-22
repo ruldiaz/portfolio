@@ -4,6 +4,7 @@ import Header from './components/header';
 import About from './components/about';
 import Projects from './components/projects';
 import Experience from './components/experience';
+import CursorFollower from './components/cursorFollower';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Experience />
           <Projects />
         </div>
+        <CursorFollower />
       </div>
     </>
   );

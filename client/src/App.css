@@ -36,8 +36,15 @@
   grid-template-columns: 30% 70%;
 }
 
+#experience:hover {
+  background-color: #3333338e;
+  border-radius: 15px;
+  padding: 0px 0px;
+}
+
 #experience .left-experience {
   text-align: left;
+  cursor: pointer;
 }
 
 #experience .right-experience {
@@ -45,11 +52,37 @@
   text-align: justify;
 }
 
+span.subtitle {
+  color: rgba(255, 255, 255, 0.322);
+}
+
 #footer li {
   list-style: none;
   display: inline-flex;
   margin-top: 50%;
   margin-left: 15px;
+}
+
+#experience .right-experience .technologies li {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 2px 15px 2px 15px;
+  border-radius: 15px;
+  margin: 10px 10px;
+  background-color: rgba(0, 128, 0, 0.448);
+  color: rgba(47, 255, 64, 0.864);
+  gap: 25px;
+  list-style: none;
+}
+
+#experience .right-experience ul.technologies {
+  padding-left: 0;
+}
+
+#experience .card {
+  cursor: pointer;
 }
 
 a {
@@ -61,6 +94,22 @@ a {
 a:hover {
   padding-left: 20px; /* Increase padding to show the line */
   border-left: 2px dashed #333; /* Add dashed line to the left */
+}
+
+/* Adjust the cursor follower's background gradient */
+.cursor-follower {
+  width: 800px; /* Increase width for a larger light effect */
+  height: 800px; /* Increase height for a larger light effect */
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.02) 10%,
+    transparent 80%
+  );
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
 }
 
 /* Responsive adjustments for mobile */
