@@ -1,42 +1,84 @@
-#root {
+.app-container {
   max-width: 1280px;
   margin: 0 auto;
+  margin-top: 0;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
+  display: flex;
+  height: 100vh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.left-half {
+  flex: 0 0 50%;
+  position: fixed;
+  top: 10%;
+  left: 15%;
+  bottom: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.right-half {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 10%;
+  margin-left: 60%;
+  text-align: justify;
+  /* Hide the default scroll bar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Style the scroll bar */
+.right-half::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar in WebKit browsers (Chrome, Safari, etc.) */
+}
+#experience {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+#experience .left-experience {
+  text-align: left;
+}
+
+#experience .right-experience {
+  text-align: left;
+  text-align: justify;
+}
+
+#footer li {
+  list-style: none;
+  display: inline-flex;
+  margin-top: 50%;
+  margin-left: 15px;
+}
+
+a {
+  text-decoration: none; /* Remove default underline */
+  padding-left: 10px; /* Add some space to the left for the line */
+  transition: padding-left 0.3s ease; /* Add smooth transition effect */
+}
+
+a:hover {
+  padding-left: 20px; /* Increase padding to show the line */
+  border-left: 2px dashed #333; /* Add dashed line to the left */
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow content to dictate height */
   }
-  to {
-    transform: rotate(360deg);
+
+  .left-half {
+    position: static; /* Remove fixed positioning */
+    flex: 1; /* Take up full width */
+    width: 100%; /* Adjust width to full width */
+    margin: 0;
+    padding: 0;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .right-half {
+    margin-left: 0; /* Reset margin */
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
