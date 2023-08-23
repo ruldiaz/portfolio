@@ -1,6 +1,7 @@
 import React from 'react';
 import petbook from '../../images/petbook.png';
 import resume from '../../images/resume.pdf';
+import abamat from '../../images/abamat.png';
 
 function Projects() {
   return (
@@ -48,13 +49,13 @@ function Projects() {
       </a>
       <br />
       <a
-        href="https://proyecto-final-pet-book.vercel.app/"
+        href="https://shimmering-lollipop-9c20f8.netlify.app/"
         target="_blank"
         className="project"
       >
         <div id="experience">
           <div className="left-experience">
-            <img src={petbook} alt="petbook" style={{ width: 115 }} />
+            <img src={abamat} alt="petbook" style={{ width: 115 }} />
           </div>
           <article className="card">
             <div className="right-experience">
@@ -63,9 +64,9 @@ function Projects() {
                 <span className="subtitle">Professional</span>
               </h3>
               <p>
-                The app promotes the products and services for a steel and
-                cement distribution company. Data is collected from an ERP
-                system and maintained through MongoDB.
+                The app sells the products and services for a steel and cement
+                distribution company. Data is collected from an ERP system and
+                maintained through MongoDB.
               </p>
               <ul className="technologies">
                 <li>Vanilla JS</li>
