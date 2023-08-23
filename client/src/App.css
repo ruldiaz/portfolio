@@ -67,7 +67,7 @@ a.project {
 }
 
 a.project:hover h3 {
-  color: rgb(50, 210, 48);
+  color: rgb(68, 224, 198);
 }
 
 a.project:hover p {
@@ -89,8 +89,8 @@ a.project:hover p {
   padding: 2px 15px 2px 15px;
   border-radius: 15px;
   margin: 5px 5px;
-  background-color: rgba(0, 128, 0, 0.291);
-  color: rgb(47, 255, 64);
+  background-color: rgba(68, 224, 198, 0.291);
+  color: rgb(68, 224, 198);
   gap: 25px;
   list-style: none;
   font-size: smaller;

@@ -5,7 +5,7 @@ import resume from '../../images/resume.pdf';
 function Projects() {
   return (
     <>
-      <a href={resume} target="_blank">
+      <a href={resume} target="_blank" id="projects">
         - View full resume -
       </a>
       <br />
@@ -40,6 +40,38 @@ function Projects() {
                 <li>Node Js</li>
                 <li>JavaScript</li>
                 <li>PostgreSQL</li>
+                <li>Express JS</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </a>
+      <br />
+      <a
+        href="https://proyecto-final-pet-book.vercel.app/"
+        target="_blank"
+        className="project"
+      >
+        <div id="experience">
+          <div className="left-experience">
+            <img src={petbook} alt="petbook" style={{ width: 115 }} />
+          </div>
+          <article className="card">
+            <div className="right-experience">
+              <h3>
+                Building Materials <br />
+                <span className="subtitle">Professional</span>
+              </h3>
+              <p>
+                The app promotes the products and services for a steel and
+                cement distribution company. Data is collected from an ERP
+                system and maintained through MongoDB.
+              </p>
+              <ul className="technologies">
+                <li>Vanilla JS</li>
+                <li>Node JS</li>
+                <li>MongoDB</li>
+                <li>JavaScript</li>
                 <li>Express JS</li>
               </ul>
             </div>
