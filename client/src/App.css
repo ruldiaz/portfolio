@@ -47,6 +47,10 @@ body {
   padding: 0px 0px;
 }
 
+#experience:hover h3 {
+  color: rgb(68, 224, 198);
+}
+
 #experience .left-experience {
   margin-top: 10px;
   text-align: left;
