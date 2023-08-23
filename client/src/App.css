@@ -137,6 +137,10 @@ a:hover {
 
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
+  body {
+    color: white;
+  }
+
   .app-container {
     flex-direction: column; /* Stack elements vertically */
     height: auto; /* Allow content to dictate height */
