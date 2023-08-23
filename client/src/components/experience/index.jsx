@@ -5,13 +5,13 @@ export default function Experience() {
     <>
       <div id="experience">
         <div className="left-experience">
-          <p>2018 -- PRESENT</p>
+          <p>2023 -- PRESENT</p>
         </div>
         <article className="card">
           <div className="right-experience">
             <h3>
-              Lead Engineer <br />
-              <span className="subtitle">Senior Engineer</span>
+              Full Stack Developer <br />
+              <span className="subtitle">Engineer</span>
             </h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit,

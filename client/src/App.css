@@ -1,3 +1,7 @@
+body {
+  background-color: rgba(15, 23, 42, 1);
+}
+
 .app-container {
   max-width: 1280px;
   margin: 0 auto;
@@ -19,7 +23,7 @@
 .right-half {
   flex: 1;
   overflow-y: auto;
-  margin-top: 10%;
+  padding-top: 10%;
   margin-left: 60%;
   text-align: justify;
   /* Hide the default scroll bar */
@@ -31,18 +35,20 @@
 .right-half::-webkit-scrollbar {
   display: none; /* Hide the scrollbar in WebKit browsers (Chrome, Safari, etc.) */
 }
+
 #experience {
   display: grid;
   grid-template-columns: 30% 70%;
 }
 
 #experience:hover {
-  background-color: #3333338e;
+  background-color: #3333331f;
   border-radius: 15px;
   padding: 0px 0px;
 }
 
 #experience .left-experience {
+  margin-top: 10px;
   text-align: left;
   cursor: pointer;
 }
@@ -54,6 +60,18 @@
 
 span.subtitle {
   color: rgba(255, 255, 255, 0.322);
+}
+
+a.project {
+  all: unset;
+}
+
+a.project:hover h3 {
+  color: rgb(50, 210, 48);
+}
+
+a.project:hover p {
+  color: white;
 }
 
 #footer li {
@@ -70,11 +88,12 @@ span.subtitle {
   align-items: flex-start;
   padding: 2px 15px 2px 15px;
   border-radius: 15px;
-  margin: 10px 10px;
-  background-color: rgba(0, 128, 0, 0.448);
-  color: rgba(47, 255, 64, 0.864);
+  margin: 5px 5px;
+  background-color: rgba(0, 128, 0, 0.291);
+  color: rgb(47, 255, 64);
   gap: 25px;
   list-style: none;
+  font-size: smaller;
 }
 
 #experience .right-experience ul.technologies {
