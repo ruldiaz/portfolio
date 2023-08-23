@@ -141,6 +141,10 @@ a:hover {
     color: white;
   }
 
+  #experience {
+    grid-template-columns: 100%;
+  }
+
   .app-container {
     flex-direction: column; /* Stack elements vertically */
     height: auto; /* Allow content to dictate height */
