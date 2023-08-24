@@ -36,6 +36,10 @@ body {
   display: none; /* Hide the scrollbar in WebKit browsers (Chrome, Safari, etc.) */
 }
 
+#title h2 {
+  color: rgba(68, 224, 198, 0.778);
+}
+
 #experience {
   display: grid;
   grid-template-columns: 30% 70%;
