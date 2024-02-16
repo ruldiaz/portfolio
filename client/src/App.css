@@ -55,6 +55,8 @@ body {
   color: rgb(68, 224, 198);
 }
 
+
+
 #experience .left-experience {
   margin-top: 10px;
   text-align: left;
@@ -64,6 +66,10 @@ body {
 #experience .right-experience {
   text-align: left;
   text-align: justify;
+}
+
+#about:hover p {
+  color: rgb(68, 224, 198);
 }
 
 span.subtitle {
@@ -166,3 +172,4 @@ a:hover {
     margin-left: 0; /* Reset margin */
   }
 }
+
